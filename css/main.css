@@ -1,0 +1,173 @@
+/* ---------- BASIC SETUP ---------- */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+footer {
+    border-top: 1px solid black;
+}
+
+/* ---------- LINKS AND LIST ITEMS ---------- */
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.12em;
+}
+
+/* ---------- ICONS ---------- */
+
+.my-linkedin {
+    color: rgb(0, 119, 181);
+}
+
+.my-html {
+    color: rgb(228, 77, 38);
+}
+
+.my-css {
+    color: rgb(38, 77, 228);
+}
+
+.my-js {
+    color: rgb(240, 219, 79);
+}
+
+/* ---------- TEXT ---------- */
+
+h1 {
+    font-size: 1.5em;
+    margin: auto;
+    max-width: 23em;
+    padding: 10px;
+}
+h2 {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.15em;
+}
+
+p {
+    max-width: 36em;
+    margin: auto;
+    line-height: 1.35em;
+    text-align: left;
+}
+
+/* ---------- HEADER ---------- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    max-width: 36em;
+    margin: auto;
+}
+
+.flex-image {
+    width: 50%;
+    flex: 0 2 auto;
+    text-align: left;
+}
+
+.nav-img {
+    width: 70px;
+}
+
+.flex-text {
+    width: 25%;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* ---------- BIO ---------- */
+
+.hero-img {
+    margin: 20px 0 40px;
+}
+
+.hero-img img {
+    height: 270px;
+    width: 270px;
+}
+
+.bio {
+    padding: 0 10px;
+}
+
+.bio-title {
+    margin: 10px 0;
+}
+
+.bio-parag {
+    margin-bottom: 1.5em;
+}
+
+/* ---------- PROJECTS SECTION ---------- */
+
+.project,
+.project-title,
+.project-img,
+.project-tech-icons,
+.project-links {
+    margin-bottom: 1em;
+}
+
+.projects-heading {
+    margin-bottom: 1.5em;
+}
+
+.project-tech-icons {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.project-links {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links li:first-child {
+    margin: 15px 0;
+}
+
+.email-button {
+    font-size: 1.2em;
+    padding: .2em;
+}
