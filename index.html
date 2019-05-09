@@ -13,48 +13,107 @@
     <link rel="stylesheet" href="css/queries.css">
 </head>
 <body>
-    <header role="banner">
-        <div class="container">
-            <nav>
-                <ul class="navbar">
-                    <li class="flex-image"><a href="index.html"><img src="img/personal-logo1-70x70.png" alt="wireframe box" class="nav-img"></a></li>
-                    <li class="flex-text"><a href="projects.html">Projects</a></li>
-                    <li class="flex-text"><a href="https://github.com/denver92john?tab=repositories">GitHub</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header role="banner" class="container">
+        <nav class="js-main-nav">
+            <ul class="navbar">
+                <li class="logo-li">
+                    <a href="#top-of-page" class="scroll"><img src="img/personal-logo1-70x70.png" alt="personal logo" class="logo"></a>
+                </li>
+                <li class="no-mobile-nav">
+                    <a href="#bio" class="scroll">Bio</a>
+                </li>
+                <li class="no-mobile-nav">
+                    <a href="#projects-heading" class="scroll">Projects</a>
+                </li>
+                <li class="no-mobile-nav">
+                    <a href="#contact-info" class="scroll">Contact</a>
+                </li>
+                <li class="hamburger-li">
+                    <div class="hamburger-div js-hamburger-div"><i class="fas fa-bars my-hamburger"></i></div>
+                </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="dropdown-nav js-dropdown-nav container">
+                <li class="dropdown-li">
+                    <a href="#bio" class="scroll">Bio</a>
+                </li>
+                <li class="dropdown-li">
+                    <a href="#projects-heading" class="scroll">Projects</a>
+                </li>
+                <li class="dropdown-li">
+                    <a href="#contact-info" class="scroll">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main role="main">
+
+    <main role="main" id="top-of-page">
         <div class="container">
             <h1>My name is Burl and I'm studying to become a full-stack developer</h1>
-            <div class="hero-img">
-                <img src="img/mountain-lake.jpg" alt="wireframe box">
-            </div>
+            <picture class="hero-img">
+                <source srcset="img/mountain.jpg" media="(min-width: 700px)">
+                <img src="img/mountain-lake.jpg" alt="scenic nature picture">
+            </picture>
+        </div>
 
-            <section role="region" class="bio">
+        <div class="container">
+            <section role="region" id="bio" class="bio">
                 <h2 class="bio-title">Here's a little bit about me</h2>
                 <p class="bio-parag">I’m en route from graduating Bloc.io’s Full-Stack Web Developer bootcamp. I’ve always had an interest in coding, but never really tried to learn how to code. I’ve accumulated a diverse range of work experience over the past few years, but I haven’t really built upon my prior experiences to develop a career path for myself.</p>
                 <p class="bio-parag">Coding has become a passion of mine and continues to reward my curiosity by exploring better solutions to any given problem. The satisfaction and pride gained in seeing the result of a final product, that works as intended, is comparable to driving by a thriving establishment and knowing that you contributed to its construction.</p>
                 <p class="bio-parag">When I’m not trying to better myself as a coder, I’m trying to be outdoors. Whether it be kayaking, hiking, etc. No matter what I’m doing though, I’m usually listening to different podcasts, which is another major interest of mine. When I become a proficient full-stack developer, I’d like to develop myself in the podcasting industry, whether behind the scenes or on the mic.</p>
             </section>
         </div>
+
+        
+            <section class="projects-section">
+                <div class="container">
+                    <h2 id="projects-heading" class="projects-heading">My Projects</h2>
+                    <section role="region" class="project">
+                        <h3 class="project-title">A Yellowstone Quiz</h3>
+                        <picture class="project-img">
+                            <source srcset="img/yellow-app.jpg" media="(min-width: 700px)">
+                            <img src="img/yellow-app-mobile.jpg" alt="yellowstone app image">
+                        </picture>
+                        <ul class="project-tech-icons-ul">
+                            <li class="project-tech-icons"><i class="fab fa-html5 fa-2x my-html"></i></li>
+                            <li class="project-tech-icons"><i class="fab fa-css3-alt fa-2x my-css"></i></li>
+                            <li class="project-tech-icons"><i class="fab fa-js-square fa-2x my-js"></i></li>
+                        </ul>
+                        <ul class="project-link-ul">
+                            <li class="project-link"><a target="_blank" href="https://denver92john.github.io/quiz-app/">Live</a></li>
+                            <li class="project-link"><a target="_blank" href="https://github.com/denver92john/quiz-app">Repo</a></li>
+                        </ul>
+                        <p class="project-description">A web quiz app used to test your knowledge about America’s oldest National Park.</p>
+                    </section>
+                </div>
+            </section>
+        
     </main>
 
     <footer role="contentinfo">
-        <section role="region" class="contact-info">
+        <section role="region" id="contact-info" class="contact-info">
             <div class="container">
-                <h2>Contact Information</h2>
+                <h2 class="contact-title">Contact Information</h2>
                 <ul class="contact-links">
                     <li>
                         <a href="mailto:myemail@gmail.com"><button type="button" class="email-button">Email Me</button></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-linkedin fa-2x my-linkedin"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/burl-adkins/"><i class="fab fa-linkedin fa-2x my-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/denver92john?tab=repositories"><i class="fab fa-github-square fa-2x my-github"></i></a>
                     </li>
                 </ul>
             </div>
         </section>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

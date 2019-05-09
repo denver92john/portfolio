@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px) {
+    main {
+        padding-top: 74px;
+    }
+
+    /* HEADER */
+    .hamburger-li,
+    .dropdown-nav {
+        display: none;
+    }
+
+    .logo-li {
+        width: 46%;
+    }
+
+    .no-mobile-nav {
+        display: list-item;
+        width: 18%;
+        text-align: right;
+    }
+
+    /* PROJECTS SECTION */
+    h1 {
+        padding: 20px 0 30px;
+    }
+
+    .project-img img {
+        width: 100%;
+        max-width: 576px;
+    }
+    
+    .project-description {
+        width: 100%;
+        max-width: 576px;
+    }
+
+    /* CONTACT INFO */
+    .contact-links {
+        max-width: 576px;
+        margin: auto;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .contact-links li {
+        flex-basis: 10%;
+    }
+
+    .contact-links li:first-child {
+        flex-basis: 100%;
+    }
+}
+

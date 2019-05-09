@@ -27,13 +27,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    padding-top: 136px;
+}
+
 .container {
     padding: 10px;
     text-align: center;
 }
 
-header {
-    background-color: #97bfbf;
+section {
+    padding-bottom: 35px;
 }
 
 footer {
@@ -49,8 +53,14 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(115, 85, 68);
+    color: rgb(42, 53, 202);
     font-weight: 700;
+    border-bottom: solid 2px rgb(42, 53, 202);
+}
+
+.logo-li a:hover,
+.contact-links a:hover {
+    border: none;
 }
 
 li {
@@ -59,6 +69,11 @@ li {
 }
 
 /* ---------- ICONS ---------- */
+
+.my-hamburger {
+    color: rgb(42, 53, 202);
+    font-size: 1.35em;
+}
 
 .my-linkedin {
     color: rgb(0, 119, 181);
@@ -76,6 +91,10 @@ li {
     color: rgb(240, 219, 79);
 }
 
+.my-github {
+    color: black;
+}
+
 /* ---------- TEXT ---------- */
 
 h1 {
@@ -83,16 +102,17 @@ h1 {
     font-weight: 700;
     line-height: 1.25em;
     margin: auto;
-    max-width: 23em;
-    padding: 5px 10px 10px;
+    max-width: 24em;
+    padding: 5px 0 10px;
 }
 h2 {
     font-size: 22.4px;
-    margin: 10px 0;
+    padding: 10px 0 20px;
 }
 
 h3 {
     font-size: 20.8px;
+    margin: .5em 0 1em;
 }
 
 p {
@@ -104,77 +124,116 @@ p {
 
 /* ---------- HEADER ---------- */
 
+/* 
+    make header ele fixed to top of screen!
+*/
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: rgb(151, 191, 191);
+}
+
 .navbar {
     display: flex;
     align-items: center;
-    max-width: 36em;
+    max-width: 576px;
     margin: auto;
 }
 
-.flex-image {
-    width: 50%;
-    flex: 0 2 auto;
+.logo-li {
+    width: 90%;
     text-align: left;
 }
 
-.nav-img {
-    width: 35%;
-    min-width: 50px;
+.logo {
+    width: 50px;
     max-width: 70px;
 }
 
-.flex-text {
-    width: 25%;
-    min-width: 60px;
+.hamburger-li {
+    width: 10%;
     text-align: right;
 }
+
+.hamburger-div {
+    display: inline-block;
+    width: 100%;
+    max-width: 35px;
+    padding: 4px 0;
+    background-color: rgb(217, 208, 191);
+    text-align: center;
+    border-radius: 25%;
+    box-shadow: inset 0 0 3px rgb(50, 64, 64);
+}
+
+.no-mobile-nav {
+    display: none;
+}
+
+.dropdown-nav {
+    display: none;
+    width: 100%;
+    max-width: 576px;
+    margin: auto;
+    text-align: right;
+    border-top: solid 2px rgba(217, 208, 191, 0.5);
+}
+
+.dropdown-li {
+    display: inline-block;
+    width: 90px;
+    padding: 15px 0 5px;
+}
+
+.dropdown-li a {color: rgb(42, 53, 202);}
 
 /* ---------- BIO ---------- */
 
 .hero-img {
     width: 90vw;
-    margin: 10px auto 20px;
 }
 
 .hero-img img {
     width: 100%;
-    max-width: 500px;
+    max-width: 576px;
+    margin: 10px auto 20px;
 }
 
 .bio {
-    padding: 0 10px;
-}
-
-.bio-title {
-    margin: 10px 0 15px;
+    padding: auto 10px;
 }
 
 .bio-parag {
     margin-bottom: 1.5em;
 }
 
+.bio-parag:last-of-type {
+    margin-bottom: 0;
+}
+
 /* ---------- PROJECTS SECTION ---------- */
 
-.project,
-.project-title,
-.project-img,
+.project-img img,
 .project-tech-icons-ul,
 .project-link {
     margin-bottom: 1em;
 }
 
-.projects-heading {
-    margin-bottom: 1.35em;
+.projects-section {
+    background-color: rgb(217, 208, 191);
 }
 
-.project-img {
-    width: 90vw;
-    margin: 0 auto 1em;
+.project {
+    padding-bottom: 0;
 }
 
 .project-img img {
     width: 75%;
     max-width: 320px;
+}
+
+.project-img img:hover {
+    transform: scale(1.03);
 }
 
 .project-tech-icons {
@@ -197,7 +256,18 @@ p {
     border-right: 1px solid black;
 }
 
+.project-description {
+    width: 75%;
+    max-width: 320px;
+}
+
 /* ---------- CONTACT ---------- */
+.contact-info {
+    padding-bottom: 0;
+}
+.contact-title {
+    margin: 0;
+}
 
 .contact-links {
     display: flex;
@@ -205,10 +275,20 @@ p {
     align-items: center;
 }
 
-.contact-links li:first-child {
-    margin: 10px 0 15px;
+.contact-links li {
+    margin-bottom: 15px;
 }
 
 .email-button {
-    padding: .3em;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(35, 61, 89);
+    background-color: rgb(217, 208, 191);
+    padding: .3em .5em;
+    border: 1px solid rgb(35, 61, 89);
+}
+
+.email-button:hover {
+    transform: scale(1.03);
+    box-shadow: inset 0 0 7px rgb(50, 64, 64);
 }
