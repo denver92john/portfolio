@@ -14,7 +14,7 @@
 </head>
 <body>
     <header role="banner" class="container">
-        <nav class="js-main-nav">
+        <nav role="navigation" class="js-main-nav">
             <ul class="navbar">
                 <li class="logo-li">
                     <a href="#top-of-page" class="scroll"><img src="img/personal-logo1-70x70.png" alt="personal logo" class="logo"></a>
@@ -34,7 +34,7 @@
             </ul>
         </nav>
 
-        <nav>
+        <nav role="navigation">
             <ul class="dropdown-nav js-dropdown-nav container">
                 <li class="dropdown-li">
                     <a href="#bio" class="scroll">Bio</a>
@@ -68,7 +68,7 @@
         </div>
 
         
-            <section class="projects-section">
+            <section role="region" class="projects-section">
                 <div class="container">
                     <h2 id="projects-heading" class="projects-heading">My Projects</h2>
                     <section role="region" class="project">
@@ -87,6 +87,24 @@
                             <li class="project-link"><a target="_blank" href="https://github.com/denver92john/quiz-app">Repo</a></li>
                         </ul>
                         <p class="project-description">A web quiz app used to test your knowledge about America’s oldest National Park.</p>
+                    </section>
+
+                    <section class="project">
+                        <h3 class="project-title">brewerySearch</h3>
+                        <picture class="project-img">
+                            <source srcset="img/brewerySearch-1118x939.jpg" media="(min-width: 700px)">
+                            <img src="img/brewerysearch-320x569.jpg" alt="brewerySearch app image">
+                        </picture>
+                        <ul class="project-tech-icons-ul">
+                            <li class="project-tech-icons"><i class="fab fa-html5 fa-2x my-html"></i></li>
+                            <li class="project-tech-icons"><i class="fab fa-css3-alt fa-2x my-css"></i></li>
+                            <li class="project-tech-icons"><i class="fab fa-js-square fa-2x my-js"></i></li>
+                        </ul>
+                        <ul class="project-link-ul">
+                            <li class="project-link"><a target="_blank" href="">Live</a></li>
+                            <li class="project-link"><a target="_blank" href="">Repo</a></li>
+                        </ul>
+                        <p class="project-description">For users looking for a brewery when visiting a new city or to find a new local brewery.</p>
                     </section>
                 </div>
             </section>

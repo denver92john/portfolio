@@ -105,6 +105,7 @@ h1 {
     max-width: 24em;
     padding: 5px 0 10px;
 }
+
 h2 {
     font-size: 22.4px;
     padding: 10px 0 20px;
@@ -124,13 +125,11 @@ p {
 
 /* ---------- HEADER ---------- */
 
-/* 
-    make header ele fixed to top of screen!
-*/
 header {
     position: fixed;
     width: 100vw;
     background-color: rgb(151, 191, 191);
+    z-index: 100;
 }
 
 .navbar {
@@ -214,7 +213,6 @@ header {
 /* ---------- PROJECTS SECTION ---------- */
 
 .project-img img,
-.project-tech-icons-ul,
 .project-link {
     margin-bottom: 1em;
 }
@@ -223,8 +221,12 @@ header {
     background-color: rgb(217, 208, 191);
 }
 
+.projects-heading {
+    padding: 10px 0;
+}
+
 .project {
-    padding-bottom: 0;
+    padding-bottom: 40px;
 }
 
 .project-img img {
@@ -236,11 +238,19 @@ header {
     transform: scale(1.03);
 }
 
-.project-tech-icons {
-    display: inline-block;
-    padding: 0 10px;
+.project-tech-icons-ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    max-width: 320px;
+    margin: 0 auto 1em;
 }
 
+/*
+.project-tech-icons {
+    display: inline-block;
+}
+*/
 .project-link-ul {
     font-size: 0;
 }
