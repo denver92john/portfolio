@@ -91,6 +91,10 @@ li {
     color: rgb(240, 219, 79);
 }
 
+.my-react {
+    color: rgb(94, 215, 242);
+}
+
 .my-github {
     color: black;
 }
@@ -113,7 +117,6 @@ h2 {
 
 h3 {
     font-size: 20.8px;
-    margin: .5em 0 1em;
 }
 
 p {
@@ -125,7 +128,7 @@ p {
 
 /* ---------- HEADER ---------- */
 
-header {
+.nav-header {
     position: fixed;
     width: 100vw;
     background-color: rgb(151, 191, 191);
@@ -186,7 +189,14 @@ header {
 
 .dropdown-li a {color: rgb(42, 53, 202);}
 
-/* ---------- BIO ---------- */
+/* ---------- MAIN HEADER ---------- */
+.main-header-text {
+    padding-bottom: 1.35em;
+}
+
+.job-title {
+    text-align: center;
+}
 
 .hero-img {
     width: 90vw;
@@ -198,6 +208,7 @@ header {
     margin: 10px auto 20px;
 }
 
+/* ---------- BIO ---------- */
 .bio {
     padding: auto 10px;
 }
@@ -212,11 +223,6 @@ header {
 
 /* ---------- PROJECTS SECTION ---------- */
 
-.project-img img,
-.project-link {
-    margin-bottom: 1em;
-}
-
 .projects-section {
     background-color: rgb(217, 208, 191);
 }
@@ -226,16 +232,30 @@ header {
 }
 
 .project {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgb(151, 191, 191);
+}
+
+.project:last-of-type {
+    border-bottom: none;
+}
+
+.project-title {
+    padding: 2em 0;
 }
 
 .project-img img {
     width: 75%;
     max-width: 320px;
+    margin-bottom: 1em;
 }
 
 .project-img img:hover {
     transform: scale(1.03);
+}
+
+.tech-used-heading {
+    padding-bottom: 1em;
 }
 
 .project-tech-icons-ul {
@@ -243,16 +263,11 @@ header {
     justify-content: space-evenly;
     width: 75%;
     max-width: 320px;
-    margin: 0 auto 1em;
+    margin: 0 auto 2em;
 }
 
-/*
 .project-tech-icons {
-    display: inline-block;
-}
-*/
-.project-link-ul {
-    font-size: 0;
+    font-size: 48px;
 }
 
 .project-link {
@@ -260,18 +275,19 @@ header {
     font-size: 16px;
     font-weight: 700;
     padding: 0 10px;
-}
-
-.project-link:first-of-type {
     border-right: 1px solid black;
 }
 
-.project-description {
-    width: 75%;
-    max-width: 320px;
+.project-link:last-of-type {
+    border-right: none;
 }
 
-/* ---------- CONTACT ---------- */
+.project-description {
+    max-width: 320px;
+    padding: 2em 0;
+}
+
+/* ---------- CONTACT/FOOTER ---------- */
 .contact-info {
     padding-bottom: 0;
 }
@@ -301,4 +317,9 @@ header {
 .email-button:hover {
     transform: scale(1.03);
     box-shadow: inset 0 0 7px rgb(50, 64, 64);
+}
+
+.footer-sponsor {
+    display: block;
+    padding-bottom: 1em;
 }

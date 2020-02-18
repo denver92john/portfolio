@@ -20,8 +20,8 @@
     }
 
     /* PROJECTS SECTION */
-    h1 {
-        padding: 20px 0 30px;
+    .main-header-text {
+        padding-top: 1.35em;
     }
 
     .project-img img {

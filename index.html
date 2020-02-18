@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/queries.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
 </head>
 <body>
-    <header role="banner" class="container">
+    <header role="banner" class="container nav-header">
         <nav role="navigation" class="js-main-nav">
             <ul class="navbar">
                 <li class="logo-li">
@@ -50,13 +55,16 @@
     </header>
 
     <main role="main" id="top-of-page">
-        <div class="container">
-            <h1>My name is Burl and I'm studying to become a full-stack developer</h1>
+        <header class="main-header container">
+            <div class="main-header-text">
+                <h1>Burl Adkins's Portfolio</h1>
+                <p class="job-title">Full Stack Web Developer</p> 
+            </div>
             <picture class="hero-img">
                 <source srcset="img/mountain.jpg" media="(min-width: 700px)">
                 <img src="img/mountain-lake.jpg" alt="scenic nature picture">
             </picture>
-        </div>
+        </header>
 
         <div class="container">
             <section role="region" id="bio" class="bio">
@@ -67,48 +75,100 @@
             </section>
         </div>
 
-        
-            <section role="region" class="projects-section">
-                <div class="container">
-                    <h2 id="projects-heading" class="projects-heading">My Projects</h2>
-                    <section role="region" class="project">
-                        <h3 class="project-title">A Yellowstone Quiz</h3>
-                        <picture class="project-img">
-                            <source srcset="img/yellow-app.jpg" media="(min-width: 700px)">
-                            <img src="img/yellow-app-mobile.jpg" alt="yellowstone app image">
-                        </picture>
-                        <ul class="project-tech-icons-ul">
-                            <li class="project-tech-icons"><i class="fab fa-html5 fa-2x my-html"></i></li>
-                            <li class="project-tech-icons"><i class="fab fa-css3-alt fa-2x my-css"></i></li>
-                            <li class="project-tech-icons"><i class="fab fa-js-square fa-2x my-js"></i></li>
-                        </ul>
-                        <ul class="project-link-ul">
-                            <li class="project-link"><a target="_blank" href="https://denver92john.github.io/quiz-app/">Live</a></li>
-                            <li class="project-link"><a target="_blank" href="https://github.com/denver92john/quiz-app">Repo</a></li>
-                        </ul>
-                        <p class="project-description">A web quiz app used to test your knowledge about America’s oldest National Park.</p>
-                    </section>
+        <section role="region" class="projects-section">
+            <div class="container">
+                <h2 id="projects-heading" class="projects-heading">My Projects</h2>
+                <section role="region" class="project">
+                    <h3 class="project-title">A Yellowstone Quiz</h3>
+                    <picture class="project-img">
+                        <source srcset="img/yellow-app.jpg" media="(min-width: 700px)">
+                        <img src="img/yellow-app-mobile.jpg" alt="yellowstone app image">
+                    </picture>
 
-                    <section class="project">
-                        <h3 class="project-title">brewerySearch</h3>
-                        <picture class="project-img">
-                            <source srcset="img/brewerySearch-1118x939.jpg" media="(min-width: 700px)">
-                            <img src="img/brewerysearch-320x569.jpg" alt="brewerySearch app image">
-                        </picture>
-                        <ul class="project-tech-icons-ul">
-                            <li class="project-tech-icons"><i class="fab fa-html5 fa-2x my-html"></i></li>
-                            <li class="project-tech-icons"><i class="fab fa-css3-alt fa-2x my-css"></i></li>
-                            <li class="project-tech-icons"><i class="fab fa-js-square fa-2x my-js"></i></li>
-                        </ul>
-                        <ul class="project-link-ul">
-                            <li class="project-link"><a target="_blank" href="">Live</a></li>
-                            <li class="project-link"><a target="_blank" href="">Repo</a></li>
-                        </ul>
-                        <p class="project-description">For users looking for a brewery when visiting a new city or to find a new local brewery.</p>
-                    </section>
-                </div>
-            </section>
-        
+                    <h4 class="tech-used-heading">Technologies Used</h4>
+                    <ul class="project-tech-icons-ul">
+                        <li class="project-tech-icons"><i class="fab fa-html5 my-html"></i></li>
+                        <li class="project-tech-icons"><i class="fab fa-css3-alt my-css"></i></li>
+                        <li class="project-tech-icons"><i class="fab fa-js-square my-js"></i></li>
+                    </ul>
+
+                    <ul class="project-link-ul">
+                        <li class="project-link"><a target="_blank" href="https://denver92john.github.io/quiz-app/">Live</a></li>
+                        <li class="project-link"><a target="_blank" href="https://github.com/denver92john/quiz-app">Repo</a></li>
+                    </ul>
+
+                    <p class="project-description">A web quiz app used to test your knowledge about America’s oldest National Park.</p>
+                </section>
+
+                <section class="project">
+                    <h3 class="project-title">brewerySearch</h3>
+                    <picture class="project-img">
+                        <source srcset="img/brewerysearch-1118x939.jpg" media="(min-width: 700px)">
+                        <img src="img/brewerysearch-320x569.jpg" alt="brewerySearch app image">
+                    </picture>
+
+                    <h4 class="tech-used-heading">Technologies Used</h4>
+                    <ul class="project-tech-icons-ul">
+                        <li class="project-tech-icons"><i class="fab fa-html5 my-html"></i></li>
+                        <li class="project-tech-icons"><i class="fab fa-css3-alt my-css"></i></li>
+                        <li class="project-tech-icons"><i class="fab fa-js-square my-js"></i></li>
+                    </ul>
+
+                    <ul class="project-link-ul">
+                        <li class="project-link"><a target="_blank" href="https://denver92john.github.io/brewerySearch/">Live</a></li>
+                        <li class="project-link"><a target="_blank" href="https://github.com/denver92john/brewerySearch">Repo</a></li>
+                    </ul>
+
+                    <p class="project-description">For users looking for a brewery when visiting a new city or to find a new local brewery.</p>
+                </section>
+
+                <section class="project">
+                    <h3 class="project-title">PickUp Game (PUG Sports)</h3>
+                    <picture class="project-img">
+                        <source srcset="img/pickup-desktop.png" media="(min-width: 700px)">
+                        <img src="img/pickup-mobile.png" alt="PickUp Game app image">
+                    </picture>
+
+                    <h4 class="tech-used-heading">Technologies Used</h4>
+                    <ul class="project-tech-icons-ul">
+                        <li class="project-tech-icons"><i class="fab fa-react my-react"></i></li>
+                        <li class="project-tech-icons"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"></li>
+                        <li class="project-tech-icons"><img src="https://img.icons8.com/color/48/000000/nodejs.png"></li>
+                    </ul>
+
+                    <ul class="project-link-ul">
+                        <li class="project-link"><a target="_blank" href="https://pickup-game.now.sh/">Live</a></li>
+                        <li class="project-link"><a target="_blank" href="https://github.com/denver92john/pickup-game-client">Client Repo</a></li>
+                        <li class="project-link"><a target="_blank" href="https://github.com/denver92john/pickup-game-api">API repo</a></li>
+                    </ul>
+
+                    <p class="project-description">PickUp Game (PUG Sports) is an app to assist users in finding local pickup games to participate in.</p>
+                </section>
+
+                <section class="project">
+                    <h3 class="project-title">Captains</h3>
+                    <picture class="project-img">
+                        <source srcset="img/captains-desktop.png" media="(min-width: 700px)">
+                        <img src="img/captains-mobile.png" alt="Captains app image">
+                    </picture>
+
+                    <h4 class="tech-used-heading">Technologies Used</h4>
+                    <ul class="project-tech-icons-ul">
+                        <li class="project-tech-icons"><i class="fab fa-react my-react"></i></li>
+                        <li class="project-tech-icons"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"></li>
+                        <li class="project-tech-icons"><img src="https://img.icons8.com/color/48/000000/nodejs.png"></li>
+                    </ul>
+
+                    <ul class="project-link-ul">
+                        <li class="project-link"><a target="_blank" href="https://captains.now.sh/">Live</a></li>
+                        <li class="project-link"><a target="_blank" href="https://github.com/denver92john/captains-client">Client Repo</a></li>
+                        <li class="project-link"><a target="_blank" href="https://github.com/denver92john/captains-api">API repo</a></li>
+                    </ul>
+
+                    <p class="project-description">Captains is an app to help users randomly select and divide a number of people into separate teams.</p>
+                </section>
+            </div>
+        </section>
     </main>
 
     <footer role="contentinfo">
@@ -126,6 +186,8 @@
                         <a target="_blank" href="https://github.com/denver92john?tab=repositories"><i class="fab fa-github-square fa-2x my-github"></i></a>
                     </li>
                 </ul>
+                <a href="https://icons8.com/icon/38561/postgresql" class="footer-sponsor">PostgreSQL icon by Icons8</a>
+                <a href="https://icons8.com/icon/54087/nodejs" class="footer-sponsor">Nodejs icon by Icons8</a>
             </div>
         </section>
     </footer>
